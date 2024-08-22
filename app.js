@@ -33,7 +33,8 @@ new Vue({
             'images/A_full-frame_comic_book_character_of_a_Jewish_woma.jpeg',
             'images/A_full-frame_comic_book_character_of_a_South_India.jpeg',
             'images/A_full-frame_comic_book_character_of_an_Indian_wom.jpeg',
-            'images/6b0a5334c0ec83d48a87373614f266db.webp.jpeg'
+            'images/6b0a5334c0ec83d48a87373614f266db.webp.jpeg',
+            'images/a2f44b0798db0471eb2bc71a834aaf55.webp.jpeg'
         ],
         captions: [
             "Economica introduces smart claim filing to reduce processing costs!",
@@ -67,7 +68,8 @@ new Vue({
             "Helping diverse communities access affordable healthcare options.",
             "Economica reaches out to different cultures with medical cost-saving wisdom.",
             "Empowering women with knowledge on gender-specific healthcare savings.",
-            "Economica revolutionizes medical billing with blockchain technology."
+            "Economica revolutionizes medical billing with blockchain technology.",
+            "Economica explores innovative healthcare delivery models for cost reduction."
         ],
         selectedImage: null
     },
