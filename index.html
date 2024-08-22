@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economica's Medical Cost-Saving Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Economica's Medical Cost-Saving Adventures!</h1>
+        <p>Join our superhero Economica as she battles high medical costs and saves patients' wallets!</p>
+        <p class="instructions">Click on an image to enlarge. Use left and right arrow keys to navigate through the gallery.</p>
+        <div class="gallery">
+            <div v-for="(image, index) in images" :key="index" class="gallery-item" @click="showModal(index)">
+                <img :src="image" :alt="'Economica Adventure ' + (index + 1)">
+            </div>
+        </div>
+        <div v-if="selectedImage !== null" class="modal" @click="hideModal">
+            <div class="modal-content" @click.stop>
+                <img :src="images[selectedImage]" :alt="'Economica Adventure ' + (selectedImage + 1)">
+                <p>{{ captions[selectedImage] }}</p>
+                <div class="navigation-instructions">
+                    Use ← and → keys to navigate, ESC to close
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
